@@ -32,18 +32,42 @@ lista_de_listas_de_inteiros = [
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
 ]
 
-nova_lista = []
 
-lista = ['Ola', 'Maconha', 1,2,3, 'xereca']
+def duplicated_counter(list_one, list_two) -> dict:
+
+    """
+    A função deve comparar a primeira lista com a segunda e verificar quantas vezes cada nome se repete.
+
+    Ex.:
+
+    ["carla", "sheila"] e  ["gorete", "keyla", ""carla]
+
+    {
+    "carla" : 1,
+    "shiela" : 0,
+    ...
+    }
+
+    :return {}
+    """
+
+    return {}
+
+
 
 def remove_numbers_from_list(lista):
-    for item in lista:
-        if item is not int:
-            nova_lista.append(item)
-        else:
-            return
+
+    """
+    A função deve remover o número da lista e retornar ela sem números.
+
+    :return [str]
+    """
+
+    return [ item for item in lista if isinstance(item, str) ]
 
 
 if __name__ == '__main__':
-    remove_numbers_from_list(lista)
-    print()
+    lista = ['Ola', 'Maconha', 1, 2, 3, 'xereca']
+    print(
+        remove_numbers_from_list(lista)
+    )
