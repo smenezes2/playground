@@ -64,7 +64,7 @@ $ git checkout -b"branch_name"
 
 1. git status
 2. git add .
-3. 
+3. git commit -m"Meu segundo commit"
 
 
 
